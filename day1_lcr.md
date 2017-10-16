@@ -20,7 +20,8 @@ label: 堆，堆的性质，建堆，堆排序算法，优先队列
 
 MAX-HEAPIFY是用于维护最大堆性质的重要过程。
 
-`
+```
+
 //The implementation of maxheapify in java
 //下标是从0开始的
 
@@ -48,17 +49,18 @@ public void maxheapify(int[] arr, int i){
   }
 }
 
-`
+```
 
 ### 建堆
 伪代码：
 
-`
+```
 build-max-heap(A)
 1 A.heap-size = A.length
 2 for i = A.length/2 downto 1
 3    maxheapify(A,i)
-`
+```
+
 分析：
 
 因为A([n/2]+1..n)中的元素都是树的叶结点，每个叶结点都相当于只包含一个元素的最大堆，这就不用再遍历这些结点了。
@@ -93,7 +95,7 @@ increaseKey(S,x,k): 将元素x的关键字值增加到k,这里假设k的值不�
 
 去掉最大键字的元素：和堆排序算法类似
 
-`
+```
 heap-extract-max(A)
 1 if A.heap-size < 1
 2     error "heap underflow"
@@ -102,11 +104,11 @@ heap-extract-max(A)
 5 A.heap-size = A.heap-size -1
 6 MaxHeapify(A,1)
 7 return max
-`
+```
 
 increasekey操作：
 
-`
+```
 heap-increasekey(A,i,key)
 1 if key < A[i]
 2    error"new key is smaller than current key"
@@ -114,14 +116,16 @@ heap-increasekey(A,i,key)
 4 while i > 1 and A[parent(i)] < A[i]
 5      exchange A[i] with A[parent(i)]
 6      i=parent(i)
-`
+```
+
 insert操作：
 
-`
+```
 max-heap-insert(A,key)
 1 A.heap-size = A.heap-size + 1
 2 A[A.heap-size]=负无穷
 3 heap-increkey(A,A.heap-size,key)
-`
+```
+
 ---
 主要就是要掌握最大堆的性质，每次从堆中删除了元素就应该重新调整堆成为最大堆。
