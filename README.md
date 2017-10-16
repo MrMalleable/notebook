@@ -45,6 +45,7 @@ cd notebook
 git commit -a -m "Add: balalabla"
 git push -u origin master
 `
+
 6. 在浏览器中进入自己的github主页，找到你已fork的本项目，点击new pull request进入pull request界面确认提交的更改，确认无误后，开始填写本次提交的说明。
 
 7. 点击create pull request来填写说明，填写好之后确认即可，等待原作者merge即可。
