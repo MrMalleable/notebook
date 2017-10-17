@@ -31,7 +31,7 @@ labels: 最大公共子序列，递归
 ### 步骤3：计算LCS的长度
 LCS问题只有O(m*n)的子问题，我们可以用动态规划自底向下的地计算。
 
-`
+```
 LCS-LENGTH(X,Y)
 1 m=X.length
 2 n=Y.length
@@ -51,7 +51,7 @@ LCS-LENGTH(X,Y)
 16      else c[i,j]=c[i,j-1]
 17         b[i,j]="向左箭头"
 18 return c and b
-`
+```
 
 ### 构造LCS
 
