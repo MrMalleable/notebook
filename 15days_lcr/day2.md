@@ -59,7 +59,8 @@ LCS-LENGTH(X,Y)
 当在表项b[i,j]中遇到一个“左斜向上箭头”时，就意味着xi=yj是LCS的一个元素。按照这种方法，我们可以按逆序依次构造出LCS的所有元素。
 
 下面的递归过程会按照正确的顺序打印出X和Y的一个LCS。起始调用为PRINT-LCS(b,X,X.length,Y.length)。
-`
+
+```
 PRINT-LCS(b,X,i,j)
 1 if i==0 or j==0
 2    return
@@ -70,7 +71,7 @@ PRINT-LCS(b,X,i,j)
 7    PRINT-LCS(b,X,i-1,j)
 8 else PRINT-LCS(b,X,i,j-1)
 
-`
+```
 
 ---
 ### 算法改进
