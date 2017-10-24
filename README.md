@@ -100,3 +100,16 @@ alias就是别名的意思。
  1. 查看设置好的别名：如果在命令行窗口设置别名的话只能在当前窗口生效，一旦关闭重新打开的话就会失效，我们可以在命令行下输入`alias`查看已经设置好的别名。
  2. 永久生效问题：找到安装文件下的etc/profile.d/aliased.sh,打开并在里面添加你要设置的别名，保存退出。这时你输入`alias`查看别名发现刚才设置的是还没有生效的，必须在命令行中输入`source aliases.sh`才会使刚才的设置生效。在这个文件里面提到了可以设置自己的.bashrc文件或者是.bash_profile文件来设置别名，这就和linux系统比较相似了。
  3. 删除别名：`unalias + 已经设置好的别名`
+
+2017/10/24
+###关于如何避免在push时重复输入用户名和密码：[最新解决](http://www.jianshu.com/p/2800dfbcdc04)
+Notes:
+```
+以下指令可能会用到：
+1. 执行以下指令可以在系统文件夹中.gitconfig中看到`[credential] helper = store`
+git config --global credential.helper store
+
+2.在改用ssh方式后第一次git push可能会警告，根据警告信息会用到以下指令：
+git config --global push.default simple
+git push --set-upstream origin master
+```
