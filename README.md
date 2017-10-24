@@ -102,7 +102,8 @@ alias就是别名的意思。
  3. 删除别名：`unalias + 已经设置好的别名`
 
 2017/10/24
-###关于如何避免在push时重复输入用户名和密码：[最新解决](http://www.jianshu.com/p/2800dfbcdc04)
+### 关于如何避免在push时重复输入用户名和密码：[最新解决](http://www.jianshu.com/p/2800dfbcdc04)
+
 Notes:
 ```
 以下指令可能会用到：
