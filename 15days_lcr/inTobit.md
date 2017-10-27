@@ -34,3 +34,5 @@ int main(){									  printf("%d\n",alien(1024*1024*1024-1024*1024-1024-1));
 }
 
 ```
+---
+2017/10/27: just for shell test!
