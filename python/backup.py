@@ -1,8 +1,10 @@
 import os
 import time
 
+#待压缩的源目录
 source=['C:\\plugin-com.fr.plugins.barchart']
 
+#压缩包存储的位置
 target_dir='D:\\BackupCode'
 
 target=target_dir+os.sep+\
